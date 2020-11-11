@@ -17,5 +17,6 @@
         // Charts now
         { "path": "./packages/bullet" },
         { "path": "./packages/pie" },
+        { "path": "./packages/waffle" }
     ]
 }
