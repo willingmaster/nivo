@@ -16,6 +16,7 @@
         // { "path": "./packages/generators" },
 
         // Charts now
+        { "path": "./packages/voronoi" },
         { "path": "./packages/bullet" },
         { "path": "./packages/circle-packing" },
         { "path": "./packages/marimekko" },
