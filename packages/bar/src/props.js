@@ -15,7 +15,6 @@ import {
 } from '@nivo/colors'
 import { axisPropType } from '@nivo/axes'
 import { LegendPropShape } from '@nivo/legends'
-import { scalePropType, bandScalePropTypes } from '@nivo/scales'
 import BarItem from './BarItem'
 
 export const BarPropTypes = {
@@ -33,8 +32,8 @@ export const BarPropTypes = {
     groupMode: PropTypes.oneOf(['stacked', 'grouped']).isRequired,
     layout: PropTypes.oneOf(['horizontal', 'vertical']).isRequired,
     reverse: PropTypes.bool.isRequired,
-    valueScale: scalePropType.isRequired,
-    indexScale: bandScalePropTypes.isRequired,
+    valueScale: PropTypes.object.isRequired,
+    indexScale: PropTypes.object.isRequired,
 
     minValue: PropTypes.oneOfType([PropTypes.number, PropTypes.oneOf(['auto'])]).isRequired,
     maxValue: PropTypes.oneOfType([PropTypes.number, PropTypes.oneOf(['auto'])]).isRequired,
